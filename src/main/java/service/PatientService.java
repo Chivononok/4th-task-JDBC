@@ -26,10 +26,6 @@ public class PatientService {
         return patients;
     }
 
-    public Patient findPatientById(Long id){
-        Patient patient = patientRepository.findById(id);
-        return patient;
-    }
 
     public double getAvgAge(){
         double avg = patientRepository.getAveragePatientAge();
