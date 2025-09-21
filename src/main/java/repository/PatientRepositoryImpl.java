@@ -124,7 +124,6 @@ public class PatientRepositoryImpl implements PatientRepository {
                 String surname = resultSet.getString("surname");
                 String chamber = resultSet.getString("chamber");
                 String age1 = resultSet.getString("age");
-
                 Patient patient = new Patient(Long.valueOf(id), name, surname, diagnos,Integer.parseInt(chamber),
                         Integer.parseInt(age1));
                 patients.add(patient);
